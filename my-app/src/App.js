@@ -18,6 +18,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import Layout from "./components/Layout";
 import ForgetPassword from './components/Auth/forgetpassword';
 import ResetPassword from './components/Auth/resetPassword';
+import AdminPage from "./components/Adminpage/adminpage"
 import 'react-notifications/lib/notifications.css';
 
 function App() {

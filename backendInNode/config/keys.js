@@ -1,4 +1,4 @@
 module.exports = {
-        mongoURI: "mongodb://localhost:27017/qrcode",
+        mongoURI: "mongodb+srv://anant:123@cluster0.sjobs.mongodb.net/Cluster0?retryWrites=true&w=majority",
         secret: 'yoursecret'
     };

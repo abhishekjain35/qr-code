@@ -38,7 +38,10 @@ class Register extends Component {
       NotificationManager.success(result.data.msg);
     })
     .then(r=>{
-       this.props.history.push("/login");
+       setTimeout(() => {
+        NotificationManager.listNotify.forEach(n => NotificationManager.remove({ id: n.id }));
+        this.props.history.push("/login");
+       }, 1000);
     })
     .catch(err => {
       if (err.response && err.response.status === 400)

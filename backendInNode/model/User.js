@@ -10,6 +10,10 @@ const UserSchema = new Schema({
         type:Boolean,
         default:false
     },
+    canLogin: {
+        type: Boolean,
+        default: false
+    },
     email: {
         type: String,
         unique: true, // Unique index. If you specify `unique: true`
